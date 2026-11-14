@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "updated_at": "2026-08-24",
+  "source": "PhoneProof seed catalogue. Entries with \"verified\": false are compiled from published manufacturer specifications but have not been confirmed against physical hardware, so a mismatch may be a catalogue error rather than a counterfeit. Correct or extend this file via Shop settings; camera counts are MINIMUMS (the app checks measured >= expected) because OEMs expose fewer logical cameras to apps than they market.",
+  "devices": [
+    {
+      "model": "SM-S928B",
+      "marketing_name": "Galaxy S24 Ultra",
+      "brand": "samsung",
+      "design_capacity_mah": 5000,
+      "ram_gb": [12],
+      "storage_gb": [256, 512, 1024],
+      "screen_width": 1440,
+      "screen_height": 3120,
+      "refresh_hz": 120,
+      "soc": "SM8650",
+      "rear_cameras": 2,
+      "front_cameras": 1,
+      "launch_year": 2024,
+      "verified": true
+    },
+
+    { "model": "SM-S921B", "marketing_name": "Galaxy S24", "brand": "samsung", "design_capacity_mah": 4000, "ram_gb": [8], "storage_gb": [128, 256, 512], "refresh_hz": 120, "launch_year": 2024, "verified": false },
+    { "model": "SM-S926B", "marketing_name": "Galaxy S24+", "brand": "samsung", "design_capacity_mah": 4900, "ram_gb": [12], "storage_gb": [256, 512], "refresh_hz": 120, "launch_year": 2024, "verified": false },
+    { "model": "SM-S918B", "marketing_name": "Galaxy S23 Ultra", "brand": "samsung", "design_capacity_mah": 5000, "ram_gb": [8, 12], "storage_gb": [256, 512, 1024], "refresh_hz": 120, "launch_year": 2023, "verified": false },
+    { "model": "SM-S911B", "marketing_name": "Galaxy S23", "brand": "samsung", "design_capacity_mah": 3900, "ram_gb": [8], "storage_gb": [128, 256], "refresh_hz": 120, "launch_year": 2023, "verified": false },
+    { "model": "SM-S901B", "marketing_name": "Galaxy S22", "brand": "samsung", "design_capacity_mah": 3700, "ram_gb": [8], "storage_gb": [128, 256], "refresh_hz": 120, "launch_year": 2022, "verified": false },
+    { "model": "SM-A556B", "marketing_name": "Galaxy A55 5G", "brand": "samsung", "design_capacity_mah": 5000, "ram_gb": [8, 12], "storage_gb": [128, 256], "refresh_hz": 120, "launch_year": 2024, "verified": false },
+    { "model": "SM-A546B", "marketing_name": "Galaxy A54 5G", "brand": "samsung", "design_capacity_mah": 5000, "ram_gb": [8], "storage_gb": [128, 256], "refresh_hz": 120, "launch_year": 2023, "verified": false },
+    { "model": "SM-A346B", "marketing_name": "Galaxy A34 5G", "brand": "samsung", "design_capacity_mah": 5000, "ram_gb": [6, 8], "storage_gb": [128, 256], "refresh_hz": 120, "launch_year": 2023, "verified": false },
+    { "model": "SM-A155F", "marketing_name": "Galaxy A15", "brand": "samsung", "design_capacity_mah": 5000, "ram_gb": [4, 6, 8], "storage_gb": [128, 256], "refresh_hz": 90, "launch_year": 2023, "verified": false },
+    { "model": "SM-M146B", "marketing_name": "Galaxy M14 5G", "brand": "samsung", "design_capacity_mah": 6000, "ram_gb": [4, 6], "storage_gb": [128], "launch_year": 2023, "verified": false },
+
+    { "model": "2201116PI", "marketing_name": "Redmi Note 11 Pro+ 5G", "brand": "xiaomi", "design_capacity_mah": 5000, "ram_gb": [6, 8], "storage_gb": [128], "launch_year": 2022, "verified": false },
+    { "model": "23021RAAEG", "marketing_name": "Redmi Note 12 5G", "brand": "xiaomi", "design_capacity_mah": 5000, "ram_gb": [4, 6, 8], "storage_gb": [64, 128, 256], "refresh_hz": 120, "launch_year": 2023, "verified": false },
+    { "model": "23090RA98I", "marketing_name": "Redmi Note 13 Pro 5G", "brand": "xiaomi", "design_capacity_mah": 5100, "ram_gb": [8, 12], "storage_gb": [128, 256], "refresh_hz": 120, "launch_year": 2023, "verified": false },
+    { "model": "2312DRA50I", "marketing_name": "Redmi Note 13 5G", "brand": "xiaomi", "design_capacity_mah": 5000, "ram_gb": [6, 8], "storage_gb": [128, 256], "refresh_hz": 120, "launch_year": 2024, "verified": false },
+    { "model": "24069RA21I", "marketing_name": "Redmi Note 13 Pro+ 5G", "brand": "xiaomi", "design_capacity_mah": 5000, "ram_gb": [8, 12], "storage_gb": [256, 512], "refresh_hz": 120, "launch_year": 2024, "verified": false },
+    { "model": "22101316I", "marketing_name": "Redmi 12C", "brand": "xiaomi", "design_capacity_mah": 5000, "ram_gb": [4, 6], "storage_gb": [64, 128], "launch_year": 2023, "verified": false },
+    { "model": "23028RN4DI", "marketing_name": "Redmi 12 5G", "brand": "xiaomi", "design_capacity_mah": 5000, "ram_gb": [4, 6, 8], "storage_gb": [128, 256], "refresh_hz": 90, "launch_year": 2023, "verified": false },
+    { "model": "2201117TI", "marketing_name": "Redmi Note 11", "brand": "xiaomi", "design_capacity_mah": 5000, "ram_gb": [4, 6], "storage_gb": [64, 128], "refresh_hz": 90, "launch_year": 2022, "verified": false },
+    { "model": "2203121C", "marketing_name": "Xiaomi 12 Pro", "brand": "xiaomi", "design_capacity_mah": 4600, "ram_gb": [8, 12], "storage_gb": [256], "refresh_hz": 120, "launch_year": 2022, "verified": false },
+    { "model": "23127PN0CG", "marketing_name": "Xiaomi 14 Ultra", "brand": "xiaomi", "design_capacity_mah": 5000, "ram_gb": [12, 16], "storage_gb": [256, 512], "refresh_hz": 120, "launch_year": 2024, "verified": false },
+    { "model": "2311DRK48G", "marketing_name": "POCO X6 Pro 5G", "brand": "xiaomi", "design_capacity_mah": 5000, "ram_gb": [8, 12], "storage_gb": [256, 512], "refresh_hz": 120, "launch_year": 2024, "verified": false },
+    { "model": "22111317I", "marketing_name": "POCO M5", "brand": "xiaomi", "design_capacity_mah": 5000, "ram_gb": [4, 6], "storage_gb": [64, 128], "refresh_hz": 90, "launch_year": 2022, "verified": false },
+
+    { "model": "CPH2467", "marketing_name": "OPPO A78 5G", "brand": "oppo", "design_capacity_mah": 5000, "ram_gb": [8], "storage_gb": [128], "refresh_hz": 90, "launch_year": 2023, "verified": false },
+    { "model": "CPH2557", "marketing_name": "OPPO Reno 11 5G", "brand": "oppo", "design_capacity_mah": 5000, "ram_gb": [8], "storage_gb": [128, 256], "refresh_hz": 120, "launch_year": 2024, "verified": false },
+    { "model": "CPH2371", "marketing_name": "OPPO A77", "brand": "oppo", "design_capacity_mah": 5000, "ram_gb": [4, 6], "storage_gb": [64, 128], "launch_year": 2022, "verified": false },
+
+    { "model": "RMX3771", "marketing_name": "realme 11 Pro 5G", "brand": "realme", "design_capacity_mah": 5000, "ram_gb": [8, 12], "storage_gb": [128, 256], "refresh_hz": 120, "launch_year": 2023, "verified": false },
+    { "model": "RMX3630", "marketing_name": "realme narzo 50A Prime", "brand": "realme", "design_capacity_mah": 5000, "ram_gb": [4], "storage_gb": [64, 128], "launch_year": 2022, "verified": false },
+    { "model": "RMX3785", "marketing_name": "realme C55", "brand": "realme", "design_capacity_mah": 5000, "ram_gb": [4, 6, 8], "storage_gb": [64, 128], "refresh_hz": 90, "launch_year": 2023, "verified": false },
+    { "model": "RMX3865", "marketing_name": "realme 12 Pro+ 5G", "brand": "realme", "design_capacity_mah": 5000, "ram_gb": [8, 12], "storage_gb": [128, 256], "refresh_hz": 120, "launch_year": 2024, "verified": false },
+
+    { "model": "V2247", "marketing_name": "vivo T2 5G", "brand": "vivo", "design_capacity_mah": 4500, "ram_gb": [6, 8], "storage_gb": [128], "refresh_hz": 90, "launch_year": 2023, "verified": false },
+    { "model": "V2237", "marketing_name": "vivo Y56 5G", "brand": "vivo", "design_capacity_mah": 5000, "ram_gb": [8], "storage_gb": [128], "launch_year": 2023, "verified": false },
+    { "model": "V2158", "marketing_name": "vivo V23 5G", "brand": "vivo", "design_capacity_mah": 4200, "ram_gb": [8, 12], "storage_gb": [128, 256], "refresh_hz": 90, "launch_year": 2022, "verified": false },
+
+    { "model": "CPH2417", "marketing_name": "OnePlus Nord CE 3 Lite 5G", "brand": "oneplus", "design_capacity_mah": 5000, "ram_gb": [8], "storage_gb": [128, 256], "refresh_hz": 120, "launch_year": 2023, "verified": false },
+    { "model": "CPH2581", "marketing_name": "OnePlus 12R", "brand": "oneplus", "design_capacity_mah": 5500, "ram_gb": [8, 16], "storage_gb": [128, 256], "refresh_hz": 120, "launch_year": 2024, "verified": false },
+    { "model": "CPH2573", "marketing_name": "OnePlus 12", "brand": "oneplus", "design_capacity_mah": 5400, "ram_gb": [12, 16], "storage_gb": [256, 512], "refresh_hz": 120, "launch_year": 2024, "verified": false },
+    { "model": "NE2213", "marketing_name": "OnePlus 10 Pro", "brand": "oneplus", "design_capacity_mah": 5000, "ram_gb": [8, 12], "storage_gb": [128, 256], "refresh_hz": 120, "launch_year": 2022, "verified": false },
+
+    { "model": "Pixel 8", "marketing_name": "Pixel 8", "brand": "google", "design_capacity_mah": 4575, "ram_gb": [8], "storage_gb": [128, 256], "refresh_hz": 120, "soc": "Tensor G3", "launch_year": 2023, "verified": false },
+    { "model": "Pixel 8 Pro", "marketing_name": "Pixel 8 Pro", "brand": "google", "design_capacity_mah": 5050, "ram_gb": [12], "storage_gb": [128, 256, 512], "refresh_hz": 120, "soc": "Tensor G3", "launch_year": 2023, "verified": false },
+    { "model": "Pixel 7", "marketing_name": "Pixel 7", "brand": "google", "design_capacity_mah": 4355, "ram_gb": [8], "storage_gb": [128, 256], "refresh_hz": 90, "soc": "Tensor G2", "launch_year": 2022, "verified": false },
+    { "model": "Pixel 7a", "marketing_name": "Pixel 7a", "brand": "google", "design_capacity_mah": 4385, "ram_gb": [8], "storage_gb": [128], "refresh_hz": 90, "soc": "Tensor G2", "launch_year": 2023, "verified": false },
+    { "model": "Pixel 6a", "marketing_name": "Pixel 6a", "brand": "google", "design_capacity_mah": 4410, "ram_gb": [6], "storage_gb": [128], "soc": "Tensor", "launch_year": 2022, "verified": false },
+
+    { "model": "motorola edge 40", "marketing_name": "Motorola Edge 40", "brand": "motorola", "design_capacity_mah": 4400, "ram_gb": [8], "storage_gb": [256], "refresh_hz": 144, "launch_year": 2023, "verified": false },
+    { "model": "moto g84 5G", "marketing_name": "Moto G84 5G", "brand": "motorola", "design_capacity_mah": 5000, "ram_gb": [8, 12], "storage_gb": [128, 256], "refresh_hz": 120, "launch_year": 2023, "verified": false },
+
+    { "model": "AC2003", "marketing_name": "OnePlus Nord", "brand": "oneplus", "design_capacity_mah": 4115, "ram_gb": [6, 8, 12], "storage_gb": [64, 128, 256], "refresh_hz": 90, "launch_year": 2020, "verified": false },
+    { "model": "Nothing Phone (2)", "marketing_name": "Nothing Phone (2)", "brand": "nothing", "design_capacity_mah": 4700, "ram_gb": [8, 12], "storage_gb": [128, 256, 512], "refresh_hz": 120, "launch_year": 2023, "verified": false },
+    { "model": "A142P", "marketing_name": "Nothing Phone (2a)", "brand": "nothing", "design_capacity_mah": 5000, "ram_gb": [8, 12], "storage_gb": [128, 256], "refresh_hz": 120, "launch_year": 2024, "verified": false }
+  ]
+}
