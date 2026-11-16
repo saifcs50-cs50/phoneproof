@@ -93,7 +93,7 @@ data class PriceOffer(
     }
 
     /**
-     * Indian digit grouping (1,50,000 rather than 150,000) — using the Western grouping on a
+     * Indian digit grouping (1,50,000 rather than 150,000), using the Western grouping on a
      * customer-facing offer in an Indian shop looks immediately wrong.
      */
     private fun groupIndian(amount: Int): String {

@@ -24,7 +24,7 @@ import com.phoneproof.diagnostics.model.TestResult
  * Cellular capability and current radio state: SIM slots, network generation, active bands and
  * signal strength.
  *
- * Band coverage matters more in India than almost anywhere else — a grey-import handset can be
+ * Band coverage matters more in India than almost anywhere else; a grey-import handset can be
  * perfectly genuine yet miss the exact LTE bands the local carrier uses, which is invisible until
  * the buyer gets home and finds the phone drops to 3G on their street.
  */

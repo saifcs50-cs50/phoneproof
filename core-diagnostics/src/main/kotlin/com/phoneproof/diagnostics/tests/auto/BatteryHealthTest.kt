@@ -215,7 +215,7 @@ class BatteryHealthTest(
         }
     }
 
-    // ------------------------------------------------------------------ snapshot
+    // snapshot
 
     private fun readSnapshot(context: Context, manager: BatteryManager): Snapshot {
         val intent: Intent? = context.registerReceiver(null, IntentFilter(Intent.ACTION_BATTERY_CHANGED))
@@ -268,7 +268,7 @@ class BatteryHealthTest(
      * Cross-checks a computed figure against the charge cycle count.
      *
      * Cells degrade with use, so a battery cannot be half-dead after a few dozen cycles. When the
-     * two disagree, the fuel-gauge arithmetic is the suspect — several MediaTek platforms report a
+     * two disagree, the fuel-gauge arithmetic is the suspect; several MediaTek platforms report a
      * charge counter that does not correspond to true coulombs, and the design capacity from
      * PowerProfile can be a platform default rather than the real cell. Rather than accuse a
      * healthy phone, the estimate is demoted to low confidence and says why.
@@ -288,7 +288,7 @@ class BatteryHealthTest(
         )
     }
 
-    // ------------------------------------------------------------------ estimation chain
+    // estimation chain
 
     private suspend fun estimateHealth(
         ctx: TestContext,
@@ -464,7 +464,7 @@ class BatteryHealthTest(
      * returned an identical capacity on two unrelated test phones, so at least one of those was a
      * compiled-in platform default rather than that phone's real cell. A capacity that
      * is too high inflates the apparent wear and costs the seller money, so PowerProfile is now
-     * used only when something corroborates it, or when nothing else exists — and in that last case
+     * used only when something corroborates it, or when nothing else exists, and in that last case
      * it is marked low confidence so the health figure it produces cannot drive a confident verdict.
      */
     private fun resolveDesignCapacity(ctx: TestContext): DesignCapacity? {
@@ -545,7 +545,7 @@ class BatteryHealthTest(
         value?.takeIf { it > 100 }
     }.getOrNull()
 
-    // ------------------------------------------------------------------ types
+    // types
 
     private data class Snapshot(
         val levelPercent: Int,

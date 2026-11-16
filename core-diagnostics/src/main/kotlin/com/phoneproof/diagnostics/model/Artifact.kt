@@ -2,7 +2,7 @@ package com.phoneproof.diagnostics.model
 
 import kotlinx.serialization.Serializable
 
-/** A file produced during a run — condition photos, camera captures, audio spectra. */
+/** A file produced during a run: condition photos, camera captures, audio spectra. */
 @Serializable
 data class Artifact(
     val id: String,

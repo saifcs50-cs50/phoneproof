@@ -24,8 +24,8 @@ import kotlin.math.roundToInt
  *
  * Counterfeit and re-badged handsets are everywhere in the Indian grey market, and they are built
  * to survive exactly one check: reading the About Phone screen, which is trivially faked because
- * `Build.MODEL` is just a string in a config file. Physical properties — panel resolution, real
- * RAM, camera sensor sizes, SoC identity — are far harder to fake convincingly.
+ * `Build.MODEL` is just a string in a config file. Physical properties (panel resolution, real
+ * RAM, camera sensor sizes, SoC identity) are far harder to fake convincingly.
  *
  * A mismatch is reported as a mismatch, never as an accusation: legitimate regional variants exist,
  * so every discrepancy names the specific field and both values and lets the reader judge.
@@ -211,7 +211,7 @@ class CounterfeitTest : DiagnosticTest {
         val height = display?.numeric(DisplayCapabilityTest.KEY_HEIGHT)?.roundToInt()
         if (spec.screenWidth != null && spec.screenHeight != null && width != null && height != null) {
             // Compare orientation-independently. The reported metrics follow the current rotation,
-            // so a landscape reading of 3120x1440 is the same panel as a portrait 1440x3120 — and
+            // so a landscape reading of 3120x1440 is the same panel as a portrait 1440x3120, and
             // treating that as a mismatch would falsely accuse a genuine phone of being a fake.
             val measuredPair = listOf(width, height).sorted()
             val expectedPair = listOf(spec.screenWidth, spec.screenHeight).sorted()

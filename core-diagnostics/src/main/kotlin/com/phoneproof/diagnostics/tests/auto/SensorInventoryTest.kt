@@ -19,7 +19,7 @@ import com.phoneproof.diagnostics.model.TestResult
  *
  * A missing gyroscope or magnetometer on a phone claiming to be a flagship is a strong counterfeit
  * signal; a missing proximity sensor on a genuine phone usually means a third-party screen was
- * fitted and the sensor was never reconnected — which the owner discovers when the display stops
+ * fitted and the sensor was never reconnected, which the owner discovers when the display stops
  * blanking during calls.
  */
 class SensorInventoryTest : DiagnosticTest {
@@ -90,7 +90,7 @@ class SensorInventoryTest : DiagnosticTest {
 
         // Without a reference row we cannot distinguish "this phone lost its gyroscope" from "this
         // model never had one". Plenty of budget handsets genuinely ship without a gyroscope or
-        // magnetometer, so calling that a fault would fail honest phones — report it, do not judge it.
+        // magnetometer, so calling that a fault would fail honest phones; report it, do not judge it.
         val haveReference = catalogueEntry != null
 
         val findings = missing.map { absent ->

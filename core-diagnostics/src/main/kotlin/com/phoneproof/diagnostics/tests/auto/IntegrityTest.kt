@@ -20,7 +20,7 @@ import java.io.File
  * unlocked bootloader means the phone's software cannot be trusted, banking apps will refuse to
  * run, and the handset is worth materially less. Findings here are deliberately loud.
  *
- * Detection is honest about its limits — a well-configured Magisk install with DenyList can defeat
+ * Detection is honest about its limits; a well-configured Magisk install with DenyList can defeat
  * userspace root checks, so a clean result is reported as "no evidence of root", not "guaranteed
  * unrooted". The Play Integrity verdict in [PlayIntegrityTest] is the hardware-backed cross-check.
  */
@@ -192,7 +192,7 @@ class IntegrityTest : DiagnosticTest {
             .ifBlank { "Integrity checks failed" }
     }
 
-    // ---------------------------------------------------------------- bootloader
+    // bootloader
 
     private fun readBootState(): BootState {
         val verified = SystemProps.getOrNull("ro.boot.verifiedbootstate")
@@ -217,7 +217,7 @@ class IntegrityTest : DiagnosticTest {
         return BootState(verified, lockState, note)
     }
 
-    // ---------------------------------------------------------------- root
+    // root
 
     private fun detectRoot(ctx: TestContext): RootState {
         val evidence = mutableListOf<String>()
@@ -262,7 +262,7 @@ class IntegrityTest : DiagnosticTest {
         output.contains("uid=0")
     }.getOrDefault(false)
 
-    // ---------------------------------------------------------------- custom ROM
+    // custom ROM
 
     private fun detectCustomRom(): RomState {
         val evidence = mutableListOf<String>()

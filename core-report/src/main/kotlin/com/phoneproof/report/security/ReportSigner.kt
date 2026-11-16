@@ -23,7 +23,7 @@ import java.util.UUID
  * The threat this defends against is mundane and common: someone edits the PDF, or pairs a good
  * report with a bad phone. Obscurity would not survive contact with a motivated reseller, so the
  * payload is signed with an EC key held in the Android Keystore and the public key travels inside
- * the report — any verifier can check it without contacting a server.
+ * the report; any verifier can check it without contacting a server.
  */
 class ReportSigner(private val context: Context) {
 

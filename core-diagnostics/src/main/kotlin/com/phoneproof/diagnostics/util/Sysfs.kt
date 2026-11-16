@@ -25,7 +25,7 @@ object Sysfs {
 
     fun readInt(vararg candidatePaths: String): Int? = readLong(*candidatePaths)?.toInt()
 
-    /** Which of [candidatePaths] actually worked — recorded in the report for traceability. */
+    /** Which of [candidatePaths] actually worked, recorded in the report for traceability. */
     fun sourcePath(vararg candidatePaths: String): String? =
         candidatePaths.firstOrNull { path ->
             runCatching { File(path).let { it.exists() && it.canRead() } }.getOrDefault(false)

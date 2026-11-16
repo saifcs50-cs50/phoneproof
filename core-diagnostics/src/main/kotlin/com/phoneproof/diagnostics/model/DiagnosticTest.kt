@@ -6,7 +6,7 @@ package com.phoneproof.diagnostics.model
  *
  * Implementations must never return [TestResult.Pass] speculatively: if the measurement could not
  * be taken, return [TestResult.Unsupported] with the concrete reason (missing sysfs node, API level,
- * absent hardware). Throwing is also safe — the runner converts an exception into a
+ * absent hardware). Throwing is also safe; the runner converts an exception into a
  * [TestResult.Skipped] with [SkipReason.ERROR] rather than letting a run die.
  */
 interface DiagnosticTest {

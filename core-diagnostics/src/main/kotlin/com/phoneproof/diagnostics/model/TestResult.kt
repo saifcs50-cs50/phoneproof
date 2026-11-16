@@ -25,7 +25,7 @@ data class Finding(
  * [Measurement]. A verdict with no measured evidence is rejected at construction time, which is how
  * PhoneProof guarantees the report never shows a Pass for a test that did not really run.
  *
- * [Skipped] and [Unsupported] are first-class outcomes and are rendered prominently — a report full
+ * [Skipped] and [Unsupported] are first-class outcomes and are rendered prominently; a report full
  * of skips is visibly worth less than one full of passes.
  */
 @Serializable
@@ -96,7 +96,7 @@ sealed interface TestResult {
     }
 
     /**
-     * The device genuinely cannot support this test — hardware absent, API level too low, or the
+     * The device genuinely cannot support this test: hardware absent, API level too low, or the
      * OEM does not expose the required sysfs path. Never a substitute for [Fail]; it means
      * "cannot know", not "is broken".
      */
@@ -120,7 +120,7 @@ enum class SkipReason(val description: String) {
  * A [TestResult] plus the execution metadata recorded by the runner.
  *
  * Only [com.phoneproof.diagnostics.runner.DiagnosticRunner] creates these, so the presence of a
- * record is itself proof that the test was dispatched — results cannot be fabricated by a test
+ * record is itself proof that the test was dispatched; results cannot be fabricated by a test
  * that never ran.
  */
 @Serializable

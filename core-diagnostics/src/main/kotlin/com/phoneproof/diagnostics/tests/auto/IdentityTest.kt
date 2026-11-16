@@ -17,7 +17,7 @@ import java.util.Date
 import java.util.Locale
 
 /**
- * Establishes what the phone claims to be. Purely informational — it never fails — but every other
+ * Establishes what the phone claims to be. Purely informational (it never fails), but every other
  * test reads from it, and the counterfeit check compares these claims against measured reality.
  */
 class IdentityTest : DiagnosticTest {

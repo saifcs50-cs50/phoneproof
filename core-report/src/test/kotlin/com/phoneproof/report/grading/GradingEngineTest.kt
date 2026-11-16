@@ -337,7 +337,7 @@ class GradingEngineTest {
         assertFalse(batteryDeductions.any { it.reason.contains("confidence") })
     }
 
-    // ---------------------------------------------------------------- helpers
+    // helpers
 
     /** A complete run where every category passes except battery, which is supplied by the caller. */
     private fun fullRunWithBattery(battery: TestRecord) = runOf(

@@ -12,7 +12,7 @@ import android.text.TextUtils
 /**
  * A cursor-based writer over a [PdfDocument].
  *
- * Reports vary wildly in length — a quick run is two pages, a shop intake with photos is eight — so
+ * Reports vary wildly in length: a quick run is two pages, a shop intake with photos is eight, so
  * every draw call reserves vertical space first and starts a new page when it will not fit. Callers
  * never manage pages directly.
  */

@@ -20,7 +20,7 @@ import kotlin.math.min
  *    a measurement crossing a documented threshold, and each carries the value that triggered it.
  *  - **A deduction is never larger than its evidence.** Every measurement carries the confidence
  *    the producing test assigned it, and deductions are scaled by that confidence. A figure the
- *    test itself contradicted costs nothing at all — it is reported, not charged for.
+ *    test itself contradicted costs nothing at all; it is reported, not charged for.
  *  - **Missing evidence lowers confidence, it does not silently pass.** Skipped and unsupported
  *    tests contribute no score, so their weight drops out of the denominator and [GradeResult.confidence]
  *    falls. Below the configured threshold the grade is capped, because a mostly-unverified phone
@@ -36,7 +36,7 @@ class GradingEngine(private val config: GradingConfig = GradingConfig.DEFAULT) {
         val allDeductions = categoryScores.flatMap { it.deductions }
 
         // Only categories that actually produced evidence count toward the score, so a skipped
-        // camera test cannot drag the grade down — it reduces confidence instead.
+        // camera test cannot drag the grade down; it reduces confidence instead.
         val scored = categoryScores.filter { it.hasEvidence && it.weight > 0 }
         val totalWeight = scored.sumOf { it.weight }
         val rawScore = if (totalWeight <= 0) 0.0
@@ -114,7 +114,7 @@ class GradingEngine(private val config: GradingConfig = GradingConfig.DEFAULT) {
      *
      * This is where the report stops short of charging a seller for a number the app cannot stand
      * behind. The scaling and the original figure are both written into the reason, so a shop can
-     * still explain the line — including why it is smaller than the raw severity would suggest.
+     * still explain the line, including why it is smaller than the raw severity would suggest.
      *
      * Returns null when nothing meaningful survives, which is the correct outcome for a measurement
      * the test itself disproved: the finding still appears in the report, it just costs nothing.

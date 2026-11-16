@@ -10,7 +10,7 @@ enum class RunMode(val label: String) {
     SHOP("Shop intake"),
 }
 
-/** Depth of the run — lets a shop trade thoroughness for counter time. */
+/** Depth of the run; lets a shop trade thoroughness for counter time. */
 @Serializable
 enum class RunDepth(val label: String) {
     QUICK("Quick (automatic tests only)"),

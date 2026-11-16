@@ -26,7 +26,7 @@ import java.util.Locale
 /**
  * Renders a [PhoneProofReport] to a branded PDF.
  *
- * Page one is built to work as a WhatsApp thumbnail — grade badge, device name and shop name are
+ * Page one is built to work as a WhatsApp thumbnail: grade badge, device name and shop name are
  * oversized on purpose, because that preview is what makes someone open the file. Everything after
  * it is the evidence: raw measured values, per-test findings, charts and photos.
  */
@@ -56,7 +56,7 @@ class ReportPdfRenderer(private val context: Context) {
         return outputFile
     }
 
-    // ------------------------------------------------------------------ page 1
+    // page 1
 
     private fun drawSummaryPage(writer: PdfPageWriter, report: PhoneProofReport) {
         drawBrandHeader(writer, report)
@@ -289,7 +289,7 @@ class ReportPdfRenderer(private val context: Context) {
         writer.advance(height)
     }
 
-    // ------------------------------------------------------------------ findings
+    // findings
 
     private fun drawFindingsSection(writer: PdfPageWriter, report: PhoneProofReport) {
         val deductions = report.grade.topDeductions(limit = 8)
@@ -315,7 +315,7 @@ class ReportPdfRenderer(private val context: Context) {
         }
     }
 
-    // ------------------------------------------------------------------ detail
+    // detail
 
     private fun drawDetailSections(writer: PdfPageWriter, report: PhoneProofReport) {
         Category.displayOrder.forEach { category ->
@@ -443,7 +443,7 @@ class ReportPdfRenderer(private val context: Context) {
         }
     }
 
-    // ------------------------------------------------------------------ charts & photos
+    // charts & photos
 
     private fun drawCharts(writer: PdfPageWriter, report: PhoneProofReport) {
         val seriesMeasurements = report.run.records.flatMap { record ->
@@ -543,7 +543,7 @@ class ReportPdfRenderer(private val context: Context) {
     }
 
     /**
-     * Photos are downsampled while decoding — a run with eight full-resolution captures would
+     * Photos are downsampled while decoding; a run with eight full-resolution captures would
      * otherwise produce a PDF too large to send over WhatsApp, which defeats the point.
      */
     private fun drawPhoto(canvas: Canvas, artifact: Artifact, target: RectF) {
@@ -572,7 +572,7 @@ class ReportPdfRenderer(private val context: Context) {
         canvas.drawRect(target, PdfTheme.stroke(PdfTheme.RULE, 0.8f))
     }
 
-    // ------------------------------------------------------------------ verification
+    // verification
 
     private fun drawVerificationSection(writer: PdfPageWriter, report: PhoneProofReport) {
         writer.spacer(18f)
@@ -629,7 +629,7 @@ class ReportPdfRenderer(private val context: Context) {
         )
     }
 
-    // ------------------------------------------------------------------ helpers
+    // helpers
 
     private fun sectionHeading(writer: PdfPageWriter, title: String) {
         writer.reserve(26f)

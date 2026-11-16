@@ -24,7 +24,7 @@ import kotlin.system.measureNanoTime
  * Sequential and 4K random throughput against internal storage.
  *
  * Worn eMMC and UFS degrade long before they fail outright, and the symptom the owner notices is
- * "the phone got slow" — which sellers attribute to software. Numbers here separate a tired flash
+ * "the phone got slow", which sellers attribute to software. Numbers here separate a tired flash
  * chip from a full one, and the write path is fsync'd so the figure reflects the device rather than
  * the page cache.
  */
@@ -275,7 +275,7 @@ class StorageSpeedTest(
      * Describes the throughput actually measured rather than naming a storage technology.
      *
      * Android does not expose whether the phone has UFS or eMMC, so inferring "UFS 3.x" from a
-     * benchmark number states a guess as a fact — and a budget phone writing 323 MB/s would be
+     * benchmark number states a guess as a fact, and a budget phone writing 323 MB/s would be
      * labelled a flagship. Performance is what was measured, so performance is what is reported.
      */
     private fun classify(writeMbps: Double, readMbps: Double, readSuspect: Boolean): String {
@@ -321,7 +321,7 @@ class StorageSpeedTest(
         private const val MAX_BALLAST_BYTES = 512L * 1024 * 1024
         /**
          * Lowered from 2500 after a budget MediaTek phone reported 2242 MB/s reads against a
-         * 418 MB/s fsync'd write — no entry-level flash does that, so it was page cache slipping
+         * 418 MB/s fsync'd write; no entry-level flash does that, so it was page cache slipping
          * under the old threshold. Safe for flagships because the ratio guard below must also
          * hold, and genuine UFS 4.0 reads and writes at comparable speeds.
          */

@@ -25,7 +25,7 @@ import kotlin.math.roundToInt
  * Advertised versus measured display capability.
  *
  * Replacement panels are the single most common repair on a second-hand phone, and a cheap one
- * frequently cannot sustain the refresh rate the original did — the phone still *reports* 120 Hz
+ * frequently cannot sustain the refresh rate the original did; the phone still *reports* 120 Hz
  * because that comes from the system config, while the panel actually delivers 60. Comparing
  * `Display.getSupportedModes()` against frame timings measured through Choreographer is what
  * separates the two.
@@ -232,7 +232,7 @@ class DisplayCapabilityTest : DiagnosticTest {
         }
     }
 
-    /** Physical size from pixel count and true DPI. Approximate — panels round their reported DPI. */
+    /** Physical size from pixel count and true DPI. Approximate; panels round their reported DPI. */
     private fun estimateDiagonalInches(metrics: DisplayMetrics): Double? {
         if (metrics.xdpi <= 0 || metrics.ydpi <= 0) return null
         val widthInches = metrics.widthPixels / metrics.xdpi

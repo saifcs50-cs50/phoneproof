@@ -14,7 +14,7 @@ import java.security.MessageDigest
  *
  * The point is to bind a report to *this* phone so a seller cannot attach a clean report from a
  * different unit. Only attributes that survive a reboot and a factory reset are used, and nothing
- * personally identifying goes in — no IMEI, no serial, no advertising ID. Two identical phones of
+ * personally identifying goes in: no IMEI, no serial, no advertising ID. Two identical phones of
  * the same model and configuration will legitimately produce the same hardware id, which is why the
  * per-report fingerprint also folds in the report timestamp.
  */

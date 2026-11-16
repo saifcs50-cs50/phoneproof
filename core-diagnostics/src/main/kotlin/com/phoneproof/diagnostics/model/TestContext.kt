@@ -50,7 +50,7 @@ interface ArtifactStore {
  *
  * The test declares what interaction it needs; the wizard renders the matching screen, collects raw
  * data, and hands measurements back. Pass/fail thresholds stay in the test class so they stay
- * unit-testable — the UI only gathers evidence.
+ * unit-testable; the UI only gathers evidence.
  */
 interface InteractionHost {
     suspend fun await(step: GuidedStep): GuidedOutcome

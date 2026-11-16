@@ -30,7 +30,7 @@ import java.io.File
  * Runs the full automatic suite against whatever device the instrumentation is attached to and
  * dumps every measured value.
  *
- * This is the harness used to validate real OEM behaviour — sysfs paths and permission handling
+ * This is the harness used to validate real OEM behaviour: sysfs paths and permission handling
  * differ enough between vendors that only a run on physical hardware tells the truth.
  */
 @RunWith(AndroidJUnit4::class)

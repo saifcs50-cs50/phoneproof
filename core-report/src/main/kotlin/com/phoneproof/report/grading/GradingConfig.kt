@@ -8,8 +8,8 @@ import kotlinx.serialization.Serializable
 /**
  * Tunable grading policy.
  *
- * Shops weight things differently — a refurbisher who replaces every battery cares far less about
- * battery health than a counter buyer does — so this is editable per outlet and travels with the
+ * Shops weight things differently; a refurbisher who replaces every battery cares far less about
+ * battery health than a counter buyer does, so this is editable per outlet and travels with the
  * report so an old grade can always be explained by the policy that produced it.
  */
 @Serializable
@@ -20,7 +20,7 @@ data class GradingConfig(
      * Grade ceilings by evidence coverage, strictest first.
      *
      * A run that skipped the touchscreen, cameras and speakers must not be able to present as an A
-     * no matter how well the automatic tests went — the untested half of the phone is exactly where
+     * no matter how well the automatic tests went; the untested half of the phone is exactly where
      * a buyer's money is at risk. Automatic-only runs land near 0.69 coverage and are therefore
      * capped at B, which is honest rather than punitive.
      */
@@ -29,7 +29,7 @@ data class GradingConfig(
      * How much of a deduction survives when the measurement behind it is not fully trusted.
      *
      * A price cut has to be defensible, and a number the producing test has already qualified
-     * cannot defend one. A factor of 0 means the deduction is dropped entirely — the finding still
+     * cannot defend one. A factor of 0 means the deduction is dropped entirely; the finding still
      * appears in the report, it just does not cost the seller money.
      */
     val confidenceDeductionFactors: Map<MeasurementConfidence, Double> = DEFAULT_CONFIDENCE_FACTORS,
@@ -81,8 +81,8 @@ data class GradingConfig(
         )
 
         /**
-         * Medium is the ordinary path for most measurements on most handsets — a fuel-gauge
-         * extrapolation at a sane charge level is how battery health is normally obtained — so it
+         * Medium is the ordinary path for most measurements on most handsets; a fuel-gauge
+         * extrapolation at a sane charge level is how battery health is normally obtained, so it
          * is not penalised. Low keeps a quarter of the deduction: the phone may genuinely be worn
          * and ignoring that outright would be as dishonest as over-charging for it. Contradicted
          * scores nothing, because the test that produced the number has already disproved it.
